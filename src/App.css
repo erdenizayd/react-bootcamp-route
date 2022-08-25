@@ -1,38 +1,85 @@
 .App {
   text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login , .signup{
+  background-color: #F0EDEE;
+  width: 300px;
+  height: 320px;
+  margin: 50px auto 20px auto;
+  padding-top: 20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login label , .signup label{
+  margin-left: 25px;
+  font-size: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login input, .signup input, select {
+  color: #847996;
+  font-size: 90%;
+  width: 250px;
+  padding: 7px 13px 4px 13px;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #847996;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+.loginheader {
+  height: 50px;
+  margin-bottom: 30px;
+  background-color: #1E152A;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonrow {
+  width: fit-content;
+  margin: 50px auto;
+}
+
+.buttonrow button, .signup button {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0px 10px;
+  border-style: none;
+  color: #F0EDEE;
+  transition-duration: 0.5s;
+  background-color: #419D78;
+
+}
+
+.signup button {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 25px;
+}
+
+.buttonrow button:hover, .signup button:hover {
+  background-image: linear-gradient(to right, #419D78, #7EC9AB);
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.buttonrow button:active, .signup button:active {
+  background-image: linear-gradient(to right, #7EC9AB, #7EC9AB);
+}
+
+.loginbutton {
+  padding: 10px 30px 10px 30px;
+}
+
+.signupbutton{
+  padding: 10px 20px 10px 20px;
+}
+
+.signup {
+  height: 450px;
 }
